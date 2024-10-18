@@ -1,0 +1,105 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2; /* Light background for contrast */
+    line-height: 1.6;
+    padding-top: 20px;
+}
+
+/* Form Container Styles */
+.form-container {
+    max-width: 400px;
+    margin: 50px auto; /* Center the form vertically and horizontally */
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: sticky; /* Make the form container sticky */
+    top: 0; /* Stick to the top of the viewport */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+/* Heading Styles */
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px; /* Larger font for emphasis */
+    color: #333;
+}
+
+/* Label Styles */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555; /* Softer color for labels */
+}
+
+/* Input Fields */
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+    width: 100%; /* Full width inputs */
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+/* Focus Styles */
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #ff5722; /* Highlight color on focus */
+    box-shadow: 0 0 5px rgba(255, 87, 34, 0.5); /* Glow effect */
+}
+
+/* Button Styles */
+button {
+    width: 100%; /* Full width button */
+    background-color: #ff5722; /* Primary button color */
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s; /* Button transitions */
+}
+
+button:hover {
+    background-color: #e64a19; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Link Styles */
+a {
+    color: #ff5722;
+    text-decoration: none;
+    text-align: center;
+    display: block; /* Block display for better spacing */
+    margin-top: 15px;
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+    .form-container {
+        width: 90%;
+        margin: 30px auto; /* Adjust margin for smaller screens */
+    }
+}

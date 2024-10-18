@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eaeef2;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+header {
+    background-color: #3f51b5; /* A more vibrant blue */
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .logo {
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar nav ul li {
+    margin-left: 25px;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar nav ul li a:hover {
+    color: #ffeb3b; /* Bright yellow on hover */
+    transform: scale(1.05);
+}
+
+/* Semester Content Styles */
+.semester-content {
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.semester-content h2 {
+    font-size: 2.8em;
+    margin-bottom: 30px;
+    color: #3f51b5;
+}
+
+/* Subject List Styles */
+.subject-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping to next line if necessary */
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+}
+
+.subject-list ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Display ul as flexbox container */
+    flex-wrap: wrap; /* Allow wrapping to next line if necessary */
+}
+
+.subject-list li {
+    margin: 15px 10px; /* Added horizontal margin */
+    list-style: none;
+}
+
+.subject-list a {
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #3f51b5;
+    padding: 30px; /* Increased padding for height */
+    border: 1px solid #3f51b5;
+    border-radius: 8px;
+    font-size: 1.5em; /* Increased font size */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 150px; /* Set fixed height for cards */
+    width: 200px; /* Fixed width for cards to ensure alignment */
+}
+
+.subject-list a:hover {
+    background-color: #3f51b5;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar nav ul li {
+        margin: 10px 0;
+    }
+
+    .semester-content h2 {
+        font-size: 2.2em;
+    }
+
+    .subject-list ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subject-list a {
+        padding: 15px;
+        font-size: 1.1em;
+    }
+}
